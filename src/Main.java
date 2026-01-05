@@ -13,12 +13,12 @@ public class Main {
         /*
         Variables* are containers storing data values in memory for use in a program
         Two types of variables: i) Primitive
-                                ii)
+                                ii) Reference
          */
 
             //Primitive variables
             /*
-
+               stored in memory(stack) and accessed directly...
             */
                 int age = 30;
                 int year = 2026;
@@ -49,9 +49,24 @@ public class Main {
         }
         else {
           System.out.println("Limited stock: " + quantity + " units left!");
-          System.out.println("Each @" + currency + price);
+          System.out.println("Each at " + currency + price);
 
         }
+
+        //Reference variables
+            /*
+               a memory address (in stack) references to another location (HEAP)
+               Examples: Strings
+                         Arrays  //complex and will practice with projects
+                         Objects
+            */
+
+        String name = "Ted Kim";
+        String email ="fake@gmail.com";
+
+        System.out.println(name + " :" + email);
+
+
 
   }
 }
